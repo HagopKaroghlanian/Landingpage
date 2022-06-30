@@ -10,6 +10,7 @@
 
 .Header {
     background-color: #1f2937;
+    padding:0 40px; 
     
 }
 
@@ -18,11 +19,23 @@
     color: #f9faf8;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+ 
 }
+
+.Headerlinks div{ margin:10px 0; display: flex; }
+
 
 .Headerlinks h3{
     font-size: 18px;
     color: #e5e7eb;
+   
+}
+
+.Headerlinks .right{
+    margin-left: 20px;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 .Maintext{
@@ -89,14 +102,22 @@
 }
 
 .Firstsection .row {
+  float: left; width: calc(25% - 10px);
+}
+
+
+.Firstsection .row img{
     border-radius: 20px;
-    border-style: ridge;
-    border-width: 5px;
-    border-color: skyblue;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
     display: inline-block;
-    margin: 25px;
-    height: 200px;
-    width: 200px;
+    height: 140px;
+    width: 140px;
+}
+
+.Firstsection .row p{
+  text-align: center;font-size: 14px;margin-top: 10;font-weight: 400;
 }
 
 
@@ -111,9 +132,8 @@
 }
 
 .Secondsection {
-    font-family: Italic;
-    font-size: 36px;
-    color: #1f2937;
+ 
+ 
     background-color: #e5e7eb;
     margin: auto;
     display: block;
@@ -121,16 +141,50 @@
     margin: auto;
 }
 
+.Secondsection p{ 
+    font-size: 32px;
+    color: #1f2937;
+    font-style: italic; 
+    text-align: left;
+}
+
+.Secondsection div{ 
+    font-size: 24px;
+    color: #000;
+    float: right;
+    margin-top: 10px;
+    
+}
+
 .Thirdsection {
     margin: auto;
     padding: 100px;
 }
 
-.Calltoaction {
+.Calltoaction { 
+    position: relative;
     color: #e5e7eb;
     background-color: #3882f6;
     padding: 40px;
     border-radius: 5px;
+}
+
+.Calltoaction p{
+    text-align: left; line-height: 1.2;
+}
+
+.Calltoaction p:nth-child(1){
+    font-weight: 600; margin-bottom: 3px;
+    font-size: 18px;
+}
+.Calltoaction p:nth-child(2){
+    font-weight: 400; 
+}
+
+.Calltoaction .button{
+  position: absolute; top: 40%; right: 30px;
+  border: 1.5px solid white;
+  padding: 5px 20px; font-weight: 500;
 }
 
 .footer {
